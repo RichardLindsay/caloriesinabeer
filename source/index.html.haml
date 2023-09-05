@@ -1,0 +1,49 @@
+.wrapper
+  %h1 Calories in a beer
+
+  %form
+    %fieldset.popular_volumes
+      .field
+        %label{for: :pint} Pint (568ml)
+        %input{type: :radio, name: :popular, value: '568', id: :pint}
+      
+      .field
+        %label{for: :half_pint} Half Pint (284ml)
+        %input{type: :radio, name: :popular, value: '284', id: :half_pint}
+      
+      .field
+        %label{for: :schooner} Schooner (425ml)
+        %input{type: :radio, name: :popular, value: '425', id: :schooner} 
+      
+      .field
+        %label{for: :third} Third (189ml)
+        %input{type: :radio, name: :popular, value: '189', id: :third} 
+      
+      .field
+        %label{for: :can_440} Can (440ml)
+        %input{type: :radio, name: :popular, value: '440', id: :can_440} 
+      
+      .field
+        %label{for: :can_330} Can (330ml)
+        %input{type: :radio, name: :popular, value: '330', id: :can_330}
+    
+    .field
+      %label Volume of beer (ml)
+      %input{type: :number, step: '1', class: :volume}
+
+    .field
+      %label ABV (%)
+      %input{type: :number, step: '.1', class: :abv}
+    
+    .field
+      %button Get calories
+
+  %h2.result
+  %a{href: '#'} Share
+
+.container
+  %h1.share_title
+  %h2.share_calories
+  %h6 @caloriesinabeer
+
+

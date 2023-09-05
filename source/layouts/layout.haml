@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}/
+    %link{rel: "preconnect", href: "https://fonts.googleapis.com"}/
+    %link{rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: ""}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap", rel: "stylesheet"}/
+    %title Calories in a beer
+    = stylesheet_link_tag "site"
+    %script{async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-MX80V1RJD2"}
+    :javascript
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MX80V1RJD2');
+
+  %body
+    = yield
+    = javascript_include_tag "dom-to-image.min"
+    = javascript_include_tag "site"
